@@ -49,6 +49,11 @@ a {
   top: -2.5rem;
 }
 
+.active {
+  color: #000;
+  cursor: default;
+}
+
 .city-input,
 .btn {
   border-radius: 60px;
