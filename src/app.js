@@ -55,10 +55,11 @@ function displayTemperature(response) {
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
-  descriptionElement = response.data.weather[0].description;
+  descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   timeElement.innerHTML = formatDate(response.data.dt * 1000);
+
   iconElement.setAttribute("src", `image/${response.data.weather[0].icon}.svg`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
