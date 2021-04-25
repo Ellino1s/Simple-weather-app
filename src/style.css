@@ -43,3 +43,8 @@ a {
   font-size: 1rem;
   top: -1.3rem;
 }
+
+.city-input,
+.btn {
+  border-radius: 60px;
+}
